@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon Backend/server.js",
     "dev": "nodemon Backend/server.js",
-    "build": "npm install $ npm install --prefix Frontend && npm run build --prefix Frontend"
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
