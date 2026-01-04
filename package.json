@@ -2,10 +2,13 @@
   "name": "job-portal-backend",
   "version": "1.0.0",
   "type": "module",
-  "main": "server.js",
+  "main": "Backend/server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node Backend/server.js",
-    "dev": "node Backend/server.js",
+    "dev": "nodemon Backend/server.js",
     "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "dependencies": {
@@ -16,11 +19,11 @@
     "cors": "^2.8.5",
     "datauri": "^4.1.0",
     "dotenv": "^17.2.3",
-    "express": "^5.1.0",
+    "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.1",
     "multer": "^2.0.2",
-    "path": "^0.12.7"
+    "node": "^24.12.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"

@@ -42,9 +42,10 @@ DBConnect();
 
 // Serve Frontend build
 server.use(express.static(path.join(_dirname, "Frontend/dist")));
-server.get((req, res) => {
+server.get("*", (req, res) => {
   res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
 });
+
 
 // Root test route
 server.get("/", (req, res) => {
